@@ -1,0 +1,156 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: "ja-JP"
+tone_instructions: "接頭辞を使用：[must]は必須事項（命名，設計），[imo]は主観的提案，nitsは軽微な改善，[ask]は質問，[fyi]は参考情報．各提案に技術的根拠を明記．コンポーネントの責務分離，props設計，コロケーション原則を重視．問題指摘だけでなく具体的な代替実装を提示．簡潔かつ直接的に．猫好きの関西人としてレビューする．"
+early_access: false
+reviews:
+  profile: "chill"
+  request_changes_workflow: false
+  high_level_summary: true
+  high_level_summary_instructions: "What does this PR do?"
+  high_level_summary_placeholder: "@coderabbitai summary"
+  high_level_summary_in_walkthrough: false
+  review_status: true
+  commit_status: true
+  fail_commit_status: true
+  collapse_walkthrough: false
+  changed_files_summary: true
+  sequence_diagrams: true
+  estimate_code_review_effort: false
+  assess_linked_issues: false
+  related_issues: false
+  related_prs: false
+  suggested_labels: true
+  labeling_instructions: []
+  auto_apply_labels: false
+  suggested_reviewers: false
+  auto_assign_reviewers: false
+  in_progress_fortune: true
+  poem: true
+  enable_prompt_for_ai_agents: false
+  path_filters:
+    - "!**/*.svg"
+    - "!**/*.png"
+    - "!**/*.jpg"
+    - "!**/*.gif"
+    - "!**/bun.lock"
+  path_instructions:
+    - path: "**/*.{ts,tsx}"
+      instructions: "Review the Typescript and React code for conformity with best practices in React, TanStack Start, Cloudflare, and Typescript. Highlight any deviations."
+  abort_on_close: true
+  disable_cache: false
+  auto_review:
+    enabled: true
+    auto_incremental_review: true
+    ignore_title_keywords: []
+    labels: []
+    drafts: true
+    base_branches: [".*"]
+    ignore_usernames: []
+  finishing_touches:
+    docstrings:
+      enabled: false
+  tools:
+    ast-grep:
+      rule_dirs: []
+      util_dirs: []
+      essential_rules: true
+      packages: []
+    shellcheck:
+      enabled: false
+    ruff:
+      enabled: true
+    markdownlint:
+      enabled: true
+    github-checks:
+      enabled: false
+      timeout_ms: 90000
+    languagetool:
+      enabled: true
+      enabled_rules: []
+      disabled_rules: []
+      enabled_categories: []
+      disabled_categories: []
+      enabled_only: false
+      level: default
+    biome:
+      enabled: false
+    hadolint:
+      enabled: true
+    swiftlint:
+      enabled: false
+    phpstan:
+      enabled: false
+      level: default
+    golangci-lint:
+      enabled: true
+    yamllint:
+      enabled: true
+    gitleaks:
+      enabled: true
+    checkov:
+      enabled: false
+    detekt:
+      enabled: false
+    eslint:
+      enabled: true
+    flake8:
+      enabled: false
+    rubocop:
+      enabled: false
+    buf:
+      enabled: false
+    regal:
+      enabled: false
+    actionlint:
+      enabled: true
+    pmd:
+      enabled: false
+    cppcheck:
+      enabled: false
+    semgrep:
+      enabled: true
+    circleci:
+      enabled: false
+    sqlfluff:
+      enabled: true
+    prismaLint:
+      enabled: false
+    oxc:
+      enabled: true
+    shopifyThemeCheck:
+      enabled: false
+    osvScanner:
+      enabled: true
+chat:
+  art: true
+  auto_reply: true
+  integrations:
+    jira:
+      usage: disabled
+    linear:
+      usage: disabled
+knowledge_base:
+  opt_out: false
+  web_search:
+    enabled: true
+  code_guidelines:
+    enabled: true
+    filePatterns:
+      - ".github/README.md"
+      - ".github/CONTRIBUTING.md"
+  learnings:
+    scope: global
+  issues:
+    scope: auto
+  jira:
+    usage: disabled
+    project_keys: []
+  linear:
+    usage: disabled
+    team_keys: []
+  pull_requests:
+    scope: auto
+code_generation:
+  docstrings:
+    language: ja-JP
+    path_instructions: []

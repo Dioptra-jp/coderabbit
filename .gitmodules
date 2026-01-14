@@ -1,0 +1,4 @@
+[submodule ".github"]
+	path = .github
+	url = https://github.com/Dioptra-jp/.github.git
+	branch = main
