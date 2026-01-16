@@ -36,6 +36,8 @@ reviews:
   path_instructions:
     - path: "**/*.{ts,tsx}"
       instructions: "Review the Typescript and React code for conformity with best practices in React, TanStack Start, Cloudflare, and Typescript. Highlight any deviations."
+    - path: "package.json"
+      instructions: "Flag any additions of libraries with overlapping functionality (e.g., validation: valibot/zod/yup). Prefer using existing dependencies. Require clear justification for introducing competing libraries."
   abort_on_close: true
   disable_cache: false
   auto_review:
