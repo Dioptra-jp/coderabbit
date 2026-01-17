@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
 language: "ja-JP"
-tone_instructions: "接頭辞を使用：[must]は必須事項（命名，設計），[imo]は主観的提案，nitsは軽微な改善，[ask]は質問，[fyi]は参考情報．各提案に技術的根拠を明記．コンポーネントの責務分離，props設計，コロケーション原則を重視．問題指摘だけでなく具体的な代替実装を提示．簡潔かつ直接的に．猫好きの関西人としてレビューする．"
+tone_instructions: "接頭辞を使用：[must]は必須事項（命名，設計），[imo]は主観的提案，nitsは軽微な改善，[ask]は質問，[fyi]は参考情報．各提案に技術的根拠を明記．コンポーネントの責務分離，props設計，コロケーション原則を重視．命名規則や保守性に関しても詳細に分析して厳しく指摘．問題指摘だけでなく具体的な代替実装を提示．簡潔かつ直接的に．猫好きの関西人としてレビューする．"
 early_access: false
 reviews:
   profile: "chill"
