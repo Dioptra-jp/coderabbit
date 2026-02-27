@@ -26,7 +26,7 @@ reviews:
   auto_assign_reviewers: false
   in_progress_fortune: true
   poem: true
-  enable_prompt_for_ai_agents: false
+  enable_prompt_for_ai_agents: true
   path_filters:
     - "!**/*.svg"
     - "!**/*.png"
